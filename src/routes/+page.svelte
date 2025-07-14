@@ -11,7 +11,7 @@
 </script>
 
 <div class="mt-8 mb-3 w-full text-left">
-	<h1 class="text-3xl font-bold">Hi, I'm Miki, an indie hacker</h1>
+	<h1 class="text-3xl font-bold">miki: indie hacker</h1>
 </div>
 
 <div class="flex flex-col gap-3">
