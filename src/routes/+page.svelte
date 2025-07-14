@@ -10,8 +10,22 @@
 	}
 </script>
 
-<div class="mt-8 mb-3 w-full text-left">
-	<h1 class="text-3xl font-bold">miki: indie hacker</h1>
+<div class="mt-8 mb-3 flex w-full items-center justify-between">
+	<h1 class="text-left text-3xl font-bold">miki: indie hacker</h1>
+	<div class="flex items-center gap-3">
+		<a
+			href="https://t.me/mikxyas"
+			target="_blank"
+			rel="noopener"
+			class="font-medium text-black/80 hover:underline">Telegram</a
+		>
+		<a
+			href="https://x.com/0xlordofbits"
+			target="_blank"
+			rel="noopener"
+			class="font-medium text-black/80 hover:underline">𝕏</a
+		>
+	</div>
 </div>
 
 <div class="flex flex-col gap-3">
