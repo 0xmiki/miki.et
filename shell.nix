@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.mkShell {
-  name = "ai-trader-view";
+  name = "personal-website-env1";
 
   buildInputs = with pkgs; [
     bun 

@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	let showImageModal = false;
+
 	function openGithub() {
 		window.open('https://github.com/0xmiki/telegramhighlights.koplugin', '_blank');
 	}
@@ -8,20 +10,42 @@
 	function openClipsGithub() {
 		window.open('https://github.com/0xmiki/clips', '_blank');
 	}
+
+	function openImageModal() {
+		showImageModal = true;
+	}
+
+	function closeImageModal() {
+		showImageModal = false;
+	}
 </script>
 
-<div class="mt-8 mb-3 flex w-full items-center justify-between">
-	<h1 class="text-left text-3xl font-bold">miki: indie hacker</h1>
-</div>
+<!-- <div class="mt-8 mb-3 flex w-full items-center justify-between">
+	<h1 class="text-left text-2xl font-bold">Indie Hacking</h1>
+</div> -->
 
-<div class="flex flex-col gap-6">
+<div class="mt-3 flex flex-col gap-6">
 	<div
-		class="mt-3 rounded-2xl border border-[#353a45] bg-[#282c34] p-6 shadow-lg transition-transform hover:scale-[1.025] hover:shadow-2xl"
+		class="mt-3 rounded-2xl border border-[#353a45] bg-[#282c34] p-6 shadow-lg transition-transform hover:shadow-2xl"
 	>
 		<p class="mb-2 text-2xl font-semibold tracking-tight text-[#f3f3f3]">Clips</p>
-		<p class="mb-4 text-[#bfc7d5]">Use AI to generate clips from YouTube</p>
+		<p class="mb-4 text-[#bfc7d5]">Use AI to generate clips from YouTube videos</p>
+		<div class="flex">
+			<img
+				src="/demo-image.png"
+				alt="Clips preview"
+				class="  mb-4 w-full cursor-pointer rounded-md border border-[#353a45] shadow-md"
+				onclick={openImageModal}
+			/>
+			<!-- <img
+				src="/image.png"
+				alt="Clips preview"
+				class=" mb-4 w-full rounded-md border border-[#353a45] shadow-md"
+			/> -->
+		</div>
+
 		<div class="flex w-full items-center gap-3">
-			<div
+			<!-- <div
 				class="flex items-center gap-1 rounded-full border border-[#353a45] bg-[#23272e] px-3 py-1"
 			>
 				<svg
@@ -42,7 +66,7 @@
 					/></svg
 				>
 				<p class="text-xs text-[#bfc7d5]">12</p>
-			</div>
+			</div> -->
 			<div
 				onclick={openClipsGithub}
 				class="flex w-33 cursor-pointer items-center justify-between gap-1 rounded-full border border-[#353a45] bg-[#23272e] px-3 py-1 transition-colors hover:bg-[#2d313a]"
@@ -68,7 +92,7 @@
 	</div>
 
 	<div
-		class="mt-3 rounded-2xl border border-[#353a45] bg-[#282c34] p-6 shadow-lg transition-transform hover:scale-[1.025] hover:shadow-2xl"
+		class="mt-3 rounded-2xl border border-[#353a45] bg-[#282c34] p-6 shadow-lg transition-transform hover:shadow-2xl"
 	>
 		<p class="mb-2 text-2xl font-semibold tracking-tight text-[#f3f3f3]">Koreader Plugin</p>
 		<p class="mb-4 text-[#bfc7d5]">
@@ -76,7 +100,7 @@
 			telegram miniapp
 		</p>
 		<div class="flex w-full items-center gap-3">
-			<div
+			<!-- <div
 				class="flex items-center gap-1 rounded-full border border-[#353a45] bg-[#23272e] px-3 py-1"
 			>
 				<svg
@@ -97,7 +121,7 @@
 					/></svg
 				>
 				<p class="text-xs text-[#bfc7d5]">167</p>
-			</div>
+			</div> -->
 			<div
 				onclick={openGithub}
 				class="flex w-33 cursor-pointer items-center justify-between gap-1 rounded-full border border-[#353a45] bg-[#23272e] px-3 py-1 transition-colors hover:bg-[#2d313a]"
@@ -122,6 +146,19 @@
 		</div>
 	</div>
 </div>
+
+{#if showImageModal}
+	<div
+		class="bg-opacity-80 fixed inset-0 z-50 flex items-center justify-center bg-black"
+		onclick={closeImageModal}
+	>
+		<img
+			src="/demo-image.png"
+			alt="Clips preview fullscreen"
+			class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl"
+		/>
+	</div>
+{/if}
 
 <!-- Social links moved to bottom -->
 <div class="mt-10 flex w-full justify-center gap-6">
