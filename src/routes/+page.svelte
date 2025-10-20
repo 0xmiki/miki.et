@@ -1,181 +1,78 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
-	let showImageModal = false;
-
-	function openGithub() {
-		window.open('https://github.com/0xmiki/telegramhighlights.koplugin', '_blank');
-	}
-
-	function openClipsGithub() {
-		window.open('https://github.com/0xmiki/clips', '_blank');
-	}
-
-	function openImageModal() {
-		showImageModal = true;
-	}
-
-	function closeImageModal() {
-		showImageModal = false;
-	}
+	import { Button } from '$lib/components/ui/button/index.js';
+	import { Label } from '$lib/components/ui/label/index.js';
+	import { Input } from '$lib/components/ui/input/index.js';
+	import * as Card from '$lib/components/ui/card/index.js';
+	import * as HoverCard from '$lib/components/ui/hover-card/index.js';
 </script>
 
-<!-- <div class="mt-8 mb-3 flex w-full items-center justify-between">
-	<h1 class="text-left text-2xl font-bold">Indie Hacking</h1>
-</div> -->
-
-<div class="mt-3 flex flex-col gap-6">
-	<div
-		class="mt-3 rounded-2xl border border-[#353a45] bg-[#282c34] p-6 shadow-lg transition-transform hover:shadow-2xl"
-	>
-		<p class="mb-2 text-2xl font-semibold tracking-tight text-[#f3f3f3]">Clips</p>
-		<p class="mb-4 text-[#bfc7d5]">Use AI to generate clips from YouTube videos</p>
-		<div class="flex">
-			<img
-				src="/demo-image.png"
-				alt="Clips preview"
-				class="  mb-4 w-full cursor-pointer rounded-md border border-[#353a45] shadow-md"
-				onclick={openImageModal}
-			/>
-			<!-- <img
-				src="/image.png"
-				alt="Clips preview"
-				class=" mb-4 w-full rounded-md border border-[#353a45] shadow-md"
-			/> -->
-		</div>
-
-		<div class="flex w-full items-center gap-3">
-			<!-- <div
-				class="flex items-center gap-1 rounded-full border border-[#353a45] bg-[#23272e] px-3 py-1"
-			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="14"
-					height="14"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-user-icon lucide-user"
-					><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle
-						cx="12"
-						cy="7"
-						r="4"
-					/></svg
-				>
-				<p class="text-xs text-[#bfc7d5]">12</p>
-			</div> -->
-			<div
-				onclick={openClipsGithub}
-				class="flex w-33 cursor-pointer items-center justify-between gap-1 rounded-full border border-[#353a45] bg-[#23272e] px-3 py-1 transition-colors hover:bg-[#2d313a]"
-			>
-				Github
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="12"
-					height="12"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-external-link-icon lucide-external-link"
-					><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path
-						d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-					/></svg
-				>
-			</div>
+<div class="p-[15vw]">
+	<div class="px-6">
+		<li>e/acc maxi</li>
+		<li>agi will not happen unless I build it</li>
+		<li>llm engineering = applied alchemy</li>
+		<li>believer in spontaneous creativity</li>
+		<li>can build full stack applications (trust me bro)</li>
+		<li>enough talk i'm currently building the "vercel" and "notion" for AI generated media</li>
+	</div>
+	<div class="mt-55">
+		<p class="text-3xl">The Missing Piece</p>
+		<div class="mt-3">
+			<li class="ml-6">Most of AI inference will be used for generating videos and images</li>
+			<li class="ml-6">Everyone is competing to build nanobanana wrappers, however</li>
+			<li class="ml-12">
+				No one is building the infrastructure for devs. The "vercel", the one click deploy
+				experience.
+			</li>
+			<li class="ml-12">
+				No one is rethinking the user experience. The "cursor", like how programmers went from copy
+				pasting from chatgpt to using cursor.
+			</li>
+			<li class="ml-6">And that's exactly what I am building</li>
+			<li class="ml-12">A node based canvas to visually construct media generation piplines</li>
+			<li class="ml-12">
+				And a backend infra which handles image processing and compression as well as video
+			</li>
+			<li class="ml-6">I faced two problems while building my own ai media app</li>
+			<li class="ml-12">
+				Image generation pipelines got too messy and complicated to manage as code
+			</li>
+			<li class="ml-12">
+				I had to figure out image / video storage and retreval and on top of that I had to compress
+				the generated images to display them faster.
+			</li>
+			<li class="ml-6">The Solution</li>
+			<li class="ml-12">Node based canvas to visually construct media generation pipelines</li>
+			<li class="ml-12">
+				An API with a CDN built in. All devs have to do now is use my API and they get media
+				compression and storage out of the box.
+				<HoverCard.Root>
+					<HoverCard.Trigger
+						href="https://github.com/sveltejs"
+						target="_blank"
+						rel="noreferrer noopener"
+						class="rounded-sm underline  focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-black"
+					>
+						@sveltejs
+					</HoverCard.Trigger>
+					<HoverCard.Content class="w-80">
+						<div class="flex justify-between space-x-4">
+							<div class="space-y-1">
+								<h4 class=" text-sm font-semibold">@sveltejs</h4>
+								<p class="text-sm">Cybernetically enhanced web apps.</p>
+								<div class="flex items-center pt-2">
+									<span class="text-muted-foreground text-xs"> Joined September 2022 </span>
+								</div>
+							</div>
+						</div>
+					</HoverCard.Content>
+				</HoverCard.Root>
+			</li>
 		</div>
 	</div>
-
-	<div
-		class="mt-3 rounded-2xl border border-[#353a45] bg-[#282c34] p-6 shadow-lg transition-transform hover:shadow-2xl"
-	>
-		<p class="mb-2 text-2xl font-semibold tracking-tight text-[#f3f3f3]">Koreader Plugin</p>
-		<p class="mb-4 text-[#bfc7d5]">
-			A plugin that lets users save and access their highlights from their e-readers through a
-			telegram miniapp
-		</p>
-		<div class="flex w-full items-center gap-3">
-			<!-- <div
-				class="flex items-center gap-1 rounded-full border border-[#353a45] bg-[#23272e] px-3 py-1"
-			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="14"
-					height="14"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-user-icon lucide-user"
-					><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle
-						cx="12"
-						cy="7"
-						r="4"
-					/></svg
-				>
-				<p class="text-xs text-[#bfc7d5]">167</p>
-			</div> -->
-			<div
-				onclick={openGithub}
-				class="flex w-33 cursor-pointer items-center justify-between gap-1 rounded-full border border-[#353a45] bg-[#23272e] px-3 py-1 transition-colors hover:bg-[#2d313a]"
-			>
-				Github
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="12"
-					height="12"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-external-link-icon lucide-external-link"
-					><path d="M15 3h6v6" /><path d="M10 14 21 3" /><path
-						d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-					/></svg
-				>
-			</div>
-		</div>
+	<div class="mt-55 flex flex-col">
+		<a target="_blank" href="https://github.com/0xmiki" class="hover:underline">GitHub</a>
+		<a target="_blank" href="https://t.me/willtocode" class="hover:underline">Telegram channel</a>
+		<a target="_blank" href="https://x.com/miki_code" class="hover:underline">X account</a>
 	</div>
-</div>
-
-{#if showImageModal}
-	<div
-		class="bg-opacity-80 fixed inset-0 z-50 flex items-center justify-center bg-black"
-		onclick={closeImageModal}
-	>
-		<img
-			src="/demo-image.png"
-			alt="Clips preview fullscreen"
-			class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-2xl"
-		/>
-	</div>
-{/if}
-
-<!-- Social links moved to bottom -->
-<div class="mt-10 flex w-full justify-center gap-6">
-	<a
-		href="https://t.me/mikxyas"
-		target="_blank"
-		rel="noopener"
-		class="text-lg font-medium text-white/80 transition-colors hover:underline"
-	>
-		Telegram
-	</a>
-	<a
-		href="https://x.com/0xlordofbits"
-		target="_blank"
-		rel="noopener"
-		class="text-lg font-medium text-white/80 transition-colors hover:underline"
-	>
-		𝕏
-	</a>
 </div>
