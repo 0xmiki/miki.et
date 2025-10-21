@@ -17,10 +17,6 @@ github: "https://github.com/0xmiki"
     <li>agi will not happen (unless I build it)</li>
     <li>llm engineering = applied alchemy</li>
     <li>believer in spontaneous creativity</li>
-    <li>
-      can build full stack applications
-      <Hover hover="(trust me bro)" description="i pinkie promise" />
-    </li>
     <li>currently building the "vercel" and the "notion" for AI generated media</li>
   </ul>
 </div>
