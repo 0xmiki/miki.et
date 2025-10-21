@@ -1,23 +1,17 @@
 <script lang="ts">
 	import Hover from '$lib/components/hover.svelte';
+	import TheMissingPiece from './blogs/the-missing-piece.svx';
+	import AboutMe from './blogs/about-me.svx';
 </script>
 
 <div class="p-[9vw] lg:p-[15vw]">
 	<div class="px-6">
-		<li>21 yo</li>
-		<li>e/acc maxi</li>
-		<li>agi will not happen (unless I build it)</li>
-		<li>llm engineering = applied alchemy</li>
-		<li>believer in spontaneous creativity</li>
-		<li>
-			can build full stack applications <Hover
-				hover={'(trust me bro)'}
-				description="Pinkie promise"
-			/>
-		</li>
-		<li>currently building the "vercel" and the "notion" for AI generated media</li>
+		<AboutMe />
 	</div>
-	<div class="mt-55">
+	<div class=" prose prose-neutral dark:prose-invert prose-base mt-55 w-full">
+		<TheMissingPiece />
+	</div>
+	<!-- <div class="mt-55">
 		<p class="text-3xl">The Missing Piece</p>
 		<div class="mt-3">
 			<li class="ml-6">Most of AI inference will be used for generating videos and images</li>
@@ -62,7 +56,7 @@
 				into vibe coding tools.
 			</li>
 		</div>
-	</div>
+	</div> -->
 	<div class="mt-55 flex flex-col">
 		<a target="_blank" href="https://github.com/0xmiki" class="hover:underline">GitHub</a>
 		<a target="_blank" href="https://t.me/willtocode" class="hover:underline">Telegram channel</a>

@@ -1,0 +1,46 @@
+### The Missing Piece
+
+Most AI inference today goes into generating videos and images.  
+Everyone’s racing to build better _nanobanana wrappers_ — but no one’s building the infrastructure layer that makes it easy for developers to actually use them.
+
+There’s no **Vercel for AI media**, no **one-click deploy** experience.  
+No one is rethinking the user experience — the _Cursor_ moment — like how devs moved from copy-pasting from ChatGPT to coding inside Cursor.
+
+That’s exactly what I’m building.
+
+---
+
+### The Problem
+
+When building my own AI media app, I hit two major roadblocks:
+
+1. **Messy image generation pipelines.**  
+   Managing prompts, parameters, and outputs as code became unmanageable fast.
+
+2. **Media delivery and performance.**  
+   I had to handle image/video storage, retrieval, and compression myself — just to make things load fast enough to be usable.
+
+---
+
+### The Solution
+
+A **node-based canvas**, like Excalidraw, for visually constructing AI media generation pipelines.  
+Design your entire workflow — prompts, transformations, filters — without touching messy backend code.
+
+Behind the scenes, an **API and infrastructure layer** handles:
+
+- Integration with image/video generation models (like Nanobanana)
+- Media compression, caching, and CDN delivery
+- Storage and retrieval out of the box
+
+Developers simply call the API — and get optimized, ready-to-serve media instantly.
+
+---
+
+### Why It Matters
+
+Simplifying infrastructure is the missing step that unlocks the next wave of AI creativity.  
+As **vibe coding** and **viral app creation** take off, creators want to build their own niche media tools for their communities — fast.
+
+This API empowers them.  
+Plug it into vibe coding tools, and anyone can launch their own media generation app — without worrying about pipelines, compression, or delivery.

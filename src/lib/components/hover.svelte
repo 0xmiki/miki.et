@@ -1,15 +1,13 @@
 <script lang="ts">
-	import { Button } from '$lib/components/ui/button/index.js';
-	import { Label } from '$lib/components/ui/label/index.js';
-	import { Input } from '$lib/components/ui/input/index.js';
-	import * as Card from '$lib/components/ui/card/index.js';
 	import * as HoverCard from '$lib/components/ui/hover-card/index.js';
 
 	let { hover, title = null, description, footer = null } = $props();
 </script>
 
 <HoverCard.Root>
-	<HoverCard.Trigger class="rounded-sm  text-blue-400">
+	<HoverCard.Trigger
+		class="rounded-sm  text-blue-400 no-underline  underline-offset-4  hover:underline"
+	>
 		{hover}
 	</HoverCard.Trigger>
 	<HoverCard.Content class="w-80">
