@@ -58,7 +58,8 @@
 			<li class="ml-24">
 				Simplifying infrastructure is a crucial step in allowing anyone to launch their own niche
 				Media generation apps. Especially now with the rise of vibe coding and viral marketing.
-				Creators want to build their own apps for their followers.
+				Creators want to build their own apps for their followers. The API empower them when plugged
+				into vibe coding tools.
 			</li>
 		</div>
 	</div>
