@@ -2,8 +2,8 @@
 
 - Soon, media generation will dominate AI inference.
 - Everyone’s racing to build nanobanana wrappers, but:
-  - No one’s creating developer-friendly infrastructure—no “Vercel” for one-click deployment.
   - No one’s reimagining the user experience, like moving from copy-pasting ChatGPT to coding in Cursor.
+  - No one’s creating developer-friendly infrastructure—no “Vercel” for one-click deployment.
 - That’s what I’m building:
   - A node-based canvas, like Excalidraw, to visually design media generation pipelines.
   - A backend infrastructure handling image processing, compression, and video delivery.
