@@ -9,12 +9,7 @@
 </script>
 
 <HoverCard.Root>
-	<HoverCard.Trigger
-		href="https://github.com/sveltejs"
-		target="_blank"
-		rel="noreferrer noopener"
-		class="rounded-sm  text-blue-400"
-	>
+	<HoverCard.Trigger class="rounded-sm  text-blue-400">
 		{hover}
 	</HoverCard.Trigger>
 	<HoverCard.Content class="w-80">

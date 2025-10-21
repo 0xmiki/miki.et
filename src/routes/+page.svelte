@@ -10,7 +10,7 @@
 		<li>llm engineering = applied alchemy</li>
 		<li>believer in spontaneous creativity</li>
 		<li>
-			can build full stack applications. <Hover
+			can build full stack applications <Hover
 				hover={'(trust me bro)'}
 				description="Pinkie promise"
 			/>
