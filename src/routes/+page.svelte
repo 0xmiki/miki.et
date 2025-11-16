@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Hover from '$lib/components/hover.svelte';
-	import TheMissingPiece from './blogs/the-missing-piece.svx';
-	import AboutMe from './blogs/about-me.svx';
+	import TheMissingPiece from '$lib/blogs/the-missing-piece.svx';
+	import MultiModalMedia from '$lib/blogs/multi-modal-media.svx';
+	import AboutMe from '$lib/blogs/about-me.svx';
 </script>
 
 <div class="p-[9vw] lg:p-[15vw]">
@@ -9,7 +10,8 @@
 		<AboutMe />
 	</div>
 	<div class=" prose prose-neutral dark:prose-invert prose-base mt-55 w-full">
-		<TheMissingPiece />
+		<!-- <TheMissingPiece /> -->
+		<MultiModalMedia />
 	</div>
 	<div class="mt-55 flex flex-col">
 		<a

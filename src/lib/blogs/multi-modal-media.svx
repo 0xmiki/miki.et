@@ -1,0 +1,16 @@
+#### 1) what?
+
+Most editors have already integrated AI. When a user uploads content, they are able to understand and transform it. However, none of the them can change or adapt based on the content.
+
+It is not enough to sqeeze AI into an editor. We need to rethink what we can achieve with an ai editor from first principles. 
+
+What I am experimenting with is an editor that understands the media but also changes its own UI and adapts to the content. I like to imagine that I am building 
+a game. A game that creates itself based on the user's content. The user uploads media and the editor creates a game around it for them. There are no rules or fixed controls. It all changes based on the type of 
+content the user wants to edit. 
+
+We need to think beyond what we have been conditioned to use. 
+
+What would it take to turn editing from a chore into an enjoyable experience that people look forward to? 
+
+Editors of today are bloated tools with strict rules and patterns, the editors of the future, they will be no different from games. 
+

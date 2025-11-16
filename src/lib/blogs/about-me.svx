@@ -12,11 +12,10 @@ github: "https://github.com/0xmiki"
 </script>
 <div class="prose dark:prose-invert prose-neutral">
   <ul>
-    <li>21 yo</li>
+    <li>21</li>
     <li>e/acc maxi</li>
-    <li>agi will not happen (unless I build it)</li>
-    <li>llm engineering = applied alchemy</li>
+    <li>likes to tinker with things</li>
     <li>believer in spontaneous creativity</li>
-    <li>currently building the "vercel" and the "cursor" for AI generated media</li>
+    <li>experimenting with how ai can improve the way we edit media</li>
   </ul>
 </div>
