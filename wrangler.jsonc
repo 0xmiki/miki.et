@@ -8,5 +8,11 @@
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
 	},
-	"observability": { "enabled": true }
+	"observability": { "enabled": true },
+	"workers_dev": true,
+	"preview_urls": true,
+	"routes": [
+		{ "pattern": "miki.et", "custom_domain": true },
+		{ "pattern": "www.miki.et", "custom_domain": true }
+	]
 }
