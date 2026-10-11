@@ -41,6 +41,19 @@
 			}
 		},
 		{
+			name: 'get it',
+			status: 'Experimental',
+			description:
+				'When I search Google or ask an LLM, I usually end up clicking through links or asking follow-ups just to get to the thing I wanted. get it is a search engine that tries to predict what you’re after and answers with something you can use: samples to play, demos to try, steps to follow.',
+			links: [{ label: 'get.miki.et', href: 'https://get.miki.et' }],
+			image: {
+				src: '/projects/getit.png',
+				width: 2560,
+				height: 1600,
+				alt: 'The get it landing page: a search box under the headline “Get the thing.”, with a typical AI answer and a get it answer for the same search side by side below.'
+			}
+		},
+		{
 			name: '4D chess',
 			status: 'Went viral on X',
 			statusHref: 'https://x.com/miki_code/status/2096132455652549117',
@@ -119,7 +132,7 @@
 	<title>miki | Projects</title>
 	<meta
 		name="description"
-		content="What Miki is building: Anchor, Day One, 4D chess, Bookshots, and ChessCave."
+		content="What Miki is building: Anchor, Day One, get it, 4D chess, Bookshots, and ChessCave."
 	/>
 </svelte:head>
 
