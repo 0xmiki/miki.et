@@ -17,6 +17,9 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
+		"@fontsource-variable/inter": "^5.3.0",
+		"@fontsource-variable/jetbrains-mono": "^5.3.0",
+		"@fontsource-variable/newsreader": "^5.3.0",
 		"@fontsource/carattere": "^5.2.8",
 		"@fontsource/caveat": "^5.2.8",
 		"@fontsource/lexend": "^5.2.11",
